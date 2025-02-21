@@ -5,3 +5,9 @@
 [x-cloak] {
     display: none;
 }
+
+
+body{
+    background: linear-gradient(to bottom, #000000, #0a1f46be);
+    color: white;
+}

@@ -1,3 +1,5 @@
+@livewire('navigation-menu')
+
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">

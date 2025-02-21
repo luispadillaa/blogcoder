@@ -15,7 +15,7 @@ class HomeController extends Controller
          //featurePosts es una variable que se le pasara a la vista en el home
          //LLama a los 3 primeros registros de la db usando eloquent
         'featuredPosts' => Post::published()->featured()->latest('published_at')->take(3)->get(),
-        'latestPosts' => Post::take (9)->get()
+        'latestPosts' => Post::published()->latest(column: 'published_at')->take(9)->get()
        ]);
     }
 }
